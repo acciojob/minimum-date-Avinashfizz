@@ -1,5 +1,21 @@
 function minDate(dates) {
   //write you code here
+	let A ="";
+	for(let i=0; i<dates.length(); i++){
+		let S = dates[i];
+        let digit = 1;
+		let d = 0;
+		for(let j=S.length()-1; j>=0 j--){
+		   let D = S.charAtCode(0);
+			let E = D.fromCharCode();
+			d +=E*10+E;
+		}
+		if(d<=digit){
+			digit=d;
+			A = dates[i];
+		}
+	}
+	Console.log(A);
 }
 
 // Do not change the code
